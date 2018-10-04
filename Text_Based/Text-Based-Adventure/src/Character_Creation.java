@@ -1,7 +1,5 @@
-package com.charley.gooch;
-import com.charley.gooch.Text_Printer;
-
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
@@ -45,33 +43,19 @@ public class Character_Creation {
 					processing();
 				}
 			}
-				else {
-					System.out.println("this is not a valid class. please enter: brute, ranger, warrior or wizard.");
-					selection = null;
+			else {
+				System.out.println("this is not a valid class. please enter: brute, ranger, warrior or wizard.");
+				selection = null;
 			}
 		}
 	}
 
-	public static void classData(Player player) {
-	FileReader in = null;
-	try {
-		in = new FileReader("com/charley/gooch/texts/class_" + player.getPClass() + ".txt");
+	public static void classData(Player player) throws FileNotFoundException {
+		FileReader in = null;
+		try {
+			in = new FileReader("com/charley/gooch/texts/class_" + player.getPClass() + ".txt");
+		}finally {
+			System.out.println(in);
+		}
 	}
-	
-	if line[0] == '+' || line[0] == '-' || line[0] == '='
-	armour.push(line.split("+       ")[1])
-	weapons.push(line.split("-       ")[1])
-	stats.push(line.split("=       ")[1])
-	end
-	player.setPHelmet($armour[0])
-	player.setPChestpiece($armour[1])
-	player.setPLeggings($armour[2])
-	player.setPMainhand($weapons[0])
-	player.setPOffhand($weapons[1])
-	player.setESTR($stats[0])
-	player.setECON($stats[1])
-	player.setEAGI($stats[2])
-	player.setEINT($stats[3])
-	player.setECHA($stats[4])
-}
 }

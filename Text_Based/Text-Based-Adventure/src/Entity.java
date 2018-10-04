@@ -1,5 +1,3 @@
-package com.charley.gooch;
-
 public class Entity {
 	public String eName;
 	public String eResource;

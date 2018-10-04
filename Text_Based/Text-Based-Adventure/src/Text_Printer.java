@@ -1,4 +1,3 @@
-package com.charley.gooch;
 import java.io.*;
 
 public class Text_Printer {
@@ -6,7 +5,7 @@ public class Text_Printer {
 	  FileReader in	= null;
 	  FileWriter out = null;
 	  try {
-		  in = new FileReader("com.charley.gooch.texts/" + fileName);
+		  in = new FileReader(fileName);
 		  System.out.println(in);
 	  }finally {
 		  if (in != null) {

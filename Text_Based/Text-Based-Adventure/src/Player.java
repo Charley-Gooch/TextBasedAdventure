@@ -1,5 +1,3 @@
-package com.charley.gooch;
-
 public class Player extends Entity {
 	public String pClass;
 	public String pMainhand;
