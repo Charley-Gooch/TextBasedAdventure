@@ -14,7 +14,7 @@ public class Character_Creation {
 	static Scanner scanner = new Scanner(System.in);
 
 	public static String ccStart() throws IOException {
-		Text_Printer.text_print("classes.txt");
+		Text_Printer.text_print("../classes.txt");
 		processing();
 		String chosen_class = selection;
 		return chosen_class;
