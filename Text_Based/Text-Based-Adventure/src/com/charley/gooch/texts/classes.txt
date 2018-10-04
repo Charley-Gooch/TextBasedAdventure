@@ -1,0 +1,31 @@
+It's time to create your character.
+The first and one of the most important choices here is to choose a class.
+Classes have a few differences in terms of skills they can learn and gear they can wear.
+----------------------------------------------------------------------------------------------------------------------
+The Brute Class:
+    The Brute class specialises in dealing TONs OF DAMAGE at melee range with large
+    2 handed weapons such as Mauls, Lances, Greatswords, Greataxes and Halbeards.
+    They can wear Medium armour which offers a moderate amount of protection.
+    Their skills focus purely on BIG DAMAGE (ON MY PING) trading any defensive
+    or utility for that damage.
+    
+The Ranger Class:
+    Opposite to the Brute, the ranger looks to do TONs OF DAMAGE from a bow OR daggers in a stealthy posistion
+    being the second most flexible class, the ranger can use their deadly range or silent steaps
+    to assassinate a target quickly and effectively.
+    They can wear light armour that offers low defence in exchange for their highly supportive skills
+    and passives that assist them in getting in and out without being seen, heard or smelt.
+    
+The Warrior Class:
+    As the all-rounder, the warrior uses it's sword and shield to control the fight.
+    Wearing heavy armour that offers a greater defence than others these fighters stand at the front of the fight.
+    Their skills are a range of protection for themselves and their team, as well as offensive spells that increase
+    their lethality to foes stupid enough to underestimate them.
+    
+The Wizard Class:
+    The terrifying conjuerer of magic. The Wizard crushes all in their path with a range of deadly spells
+    or protect allies with a collection of defencive and supportive buffs and spells that can turn the tide of battle.
+    They wear robes that offer minimal protection, less than that of light armour.
+    Their skills are replaced by their range of spells however learning a spell is far harder than learning a skill.
+----------------------------------------------------------------------------------------------------------------------
+Type a class name to see starting gear, skills and stat bonuses.
