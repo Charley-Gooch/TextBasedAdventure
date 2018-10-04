@@ -1,8 +1,10 @@
 public class Entity {
-	public String eName;
-	public String eResource;
-	public int eHealth;
-	public int eResourceCount;
+	private String eName;
+	private String eResource;
+	private int eHealth;
+	private int eResourceCount;
+	private int attack;
+	private int defence;
 
 	public Entity(String eName, int eHealth, String eResource, int eResourceCount) {
 		this.eName = eName;	
@@ -11,7 +13,15 @@ public class Entity {
 		this.eResourceCount = eResourceCount;
 	}
 	//ENTITY
-	//GETTERS  
+	//GETTERS
+	public int getAttack() {
+		return this.attack;
+	}
+	
+	public int getDefence() {
+		return this.defence;
+	}
+	
 	public String getName() {
 		return this.eName;
 	}
@@ -34,5 +44,13 @@ public class Entity {
 
 	public void setHealth(int health_count) {
 		this.eHealth = health_count;
+	}
+	
+	public void setAttack(int attack) {
+		this.attack = attack;
+	}
+	
+	public void setDefence(int defence) {
+		this.defence = defence;
 	}
 }

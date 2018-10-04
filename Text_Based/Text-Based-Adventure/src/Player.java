@@ -1,12 +1,14 @@
 public class Player extends Entity {
-	public String pClass;
-	public String pMainhand;
-	public String pOffhand;
-	public String pHelmet;
-	public String pChestpiece;
-	public String pLeggings;
+	private String pClass;
+	private String pMainhand;
+	private String pOffhand;
+	private String pHelmet;
+	private String pChestpiece;
+	private String pLeggings;
+	
 	public Player(String pClass, String eName, int eHealth, String eResourse, int eResourseCount) {
 		super(eName, eHealth,eResourse, eResourseCount);
+		this.pClass = pClass;
 	}
 	//GETTERS
 	public String getPClass() {
