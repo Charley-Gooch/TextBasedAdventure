@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,7 +15,7 @@ public class Character_Creation {
 	static Scanner scanner = new Scanner(System.in);
 
 	public static String ccStart() throws IOException {
-		Text_Printer.text_print("../classes.txt");
+		Text_Printer.text_print("C://Users//charley.gooch//git//repository//Text_Based//Text-Based-Adventure//resources//classes.txt");
 		processing();
 		String chosen_class = selection;
 		return chosen_class;
@@ -50,12 +51,23 @@ public class Character_Creation {
 		}
 	}
 
-	public static void classData(Player player) throws FileNotFoundException {
+	public static void classData(Player player) throws IOException {
 		FileReader in = null;
+		BufferedReader reader = null;
 		try {
-			in = new FileReader("com/charley/gooch/texts/class_" + player.getPClass() + ".txt");
+			in = new FileReader("C://Users//charley.gooch//git//repository//Text_Based//Text-Based-Adventure//resources//class_" + player.getPClass() + ".txt");
+			reader = new BufferedReader(in);
+			String line = "";
+			while (line != null) {
+				reader.readLine();
+			}
 		}finally {
-			System.out.println(in);
+			if (reader != null) {
+				reader.close();
+			}
+			if (in != null) {
+				in.close();
+			}
 		}
 	}
 }
