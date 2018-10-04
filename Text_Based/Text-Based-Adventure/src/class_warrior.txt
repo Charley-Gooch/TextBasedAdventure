@@ -1,0 +1,20 @@
+###############################################################################
+The Warrior class starts with the following:
+Equipment:
+    Arnour:
++       Rusty Chain helm => defence: 2;
++       Rusted Platemail => defence: 5;
++       Rusted Chainskirt => defence: 2;
+    Weapon:
+-       Shoddy Shortsword=> Attack: 3;
+-       Cracked Wooden Shield=> defence: 2;
+    Stats:
+=       Health => 10;
+=       Resource => Stamina;
+=       Resource Pool => 15;
+=       STR => 2;
+=       CON => 2;
+=       AGI => 1;
+=       INT => 1;
+=       CHA => 1;
+###############################################################################
