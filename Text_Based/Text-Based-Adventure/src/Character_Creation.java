@@ -13,7 +13,7 @@ public class Character_Creation {
 	static Scanner scanner = new Scanner(System.in);
 
 	public static String ccStart() throws IOException {
-		Text_Printer.text_print("C://Users//charley.gooch//git//repository//Text_Based//Text-Based-Adventure//resources//classes.txt");
+		Text_Printer.text_print("classes.txt");
 		processing();
 		String chosen_class = selection;
 		return chosen_class;
@@ -28,13 +28,15 @@ public class Character_Creation {
 	private static void processing() throws IOException {
 		while (confirmation == false) {
 			if (selection == null) {
-				selection = scanner.next();
+				selection = scanner.nextLine();
+				selection = selection.toLowerCase();
 			}
-			if (selection == "brute" || selection == "ranger" || selection == "warrior" || selection == "wizard") {
-				Text_Printer.text_print("class_"+selection);
+			if (selection.equals("brute") || selection.equals("ranger") || selection.equals("warrior") || selection.equals("wizard")) {
+				Text_Printer.text_print("class_"+selection+".txt");
 				System.out.println("to confirm your choice, please type 'confirm', else type another class to view");
-				String conf = scanner.next();
-				if (conf == "confirm") {
+				String conf = scanner.nextLine();
+				conf = conf.toLowerCase();
+				if (conf.equals("confirm")) {
 					confirmation = true;
 					break;
 				} else {
