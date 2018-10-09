@@ -53,33 +53,68 @@ public class Character_Creation {
 
 	public static void classData(Player player) throws IOException, NullPointerException {
 		//TODO make this assign each part of the player their respective piece of equipment
-		FileReader r = null;
-		BufferedReader reader = null;
-		try {
-			r = new FileReader("C://Users//charley.gooch//git//repository//Text_Based//Text-Based-Adventure//resources//class_" + player.getPClass() + ".txt");
-			reader = new BufferedReader(r);
-			String line = "";
-			while (line != null) {
-				line = reader.readLine().toString();
-				if(line.substring(0,1).equals("+")) {
-					System.out.println(line);
-				}
-				else if(line.substring(0,1).equals("-")) {
-					System.out.println(line);
-				}
-				else if(line.substring(0,1).equals("=")) {
-					System.out.println(line);
-				}else if(line.substring(0,1).equals("#")) {
-					line = null;
-				}
-			}
-		}finally{
-			if(r != null) {
-				r.close();
-			}
-			if(reader != null) {
-				reader.close();
-			}
+		String temp = player.getPClass();
+		switch(temp) {
+		case "wizard": 
+			player.setPHelmet("Tattered Cap");
+			player.setPChestpiece("Tattered Robe Top");
+			player.setPLeggings("Tattered Robe Bottom");
+			player.setPMainhand("Broken Stave");
+			player.setPOffhand("No Offhand");
+			player.setHealth(10);
+			player.setResource("Mana");
+			player.setResourceCount(15);
+			player.setSTR(1);
+			player.setCON(1);
+			player.setAGI(1);
+			player.setINT(3);
+			player.setCHA(1);
+			break;
+		case "warrior":
+			player.setPHelmet("Rusty Chainhelm");
+			player.setPChestpiece("Rusted Platemail");
+			player.setPLeggings("Rusted Chainskirt");
+			player.setPMainhand("Shoddy Shortsword");
+			player.setPOffhand("Cracked Wooden Shield");
+			player.setHealth(10);
+			player.setResource("Stamina");
+			player.setResourceCount(15);
+			player.setSTR(2);
+			player.setCON(2);
+			player.setAGI(1);
+			player.setINT(1);
+			player.setCHA(1);
+			break;
+		case "ranger":
+			player.setPHelmet("Leather Cap");
+			player.setPChestpiece("Leather Coat");
+			player.setPLeggings("Leather Chaps");
+			player.setPMainhand("Wooden Bow");
+			player.setPOffhand("Withered Quiver");
+			player.setHealth(10);
+			player.setResource("Stamina");
+			player.setResourceCount(15);
+			player.setSTR(2);
+			player.setCON(1);
+			player.setAGI(2);
+			player.setINT(1);
+			player.setCHA(1);
+			break;
+		case "brute":
+			player.setPHelmet("Rusty Chainhelm");
+			player.setPChestpiece("Rusty Chainmail");
+			player.setPLeggings("Leather Chaps");
+			player.setPMainhand("Shoddy Greatsword");
+			player.setPOffhand("No Offhand");
+			player.setHealth(10);
+			player.setResource("Stamina");
+			player.setResourceCount(15);
+			player.setSTR(3);
+			player.setCON(1);
+			player.setAGI(1);
+			player.setINT(1);
+			player.setCHA(1);
+			break;
 		}
 	}
 }

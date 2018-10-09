@@ -1,11 +1,12 @@
 The Ranger class starts with the following:
 Equipment:
     Arnour:
-+       Leather Cap => defence: 1;
-+       Leather Coat => defence: 3;
-+       Leather Chaps => defence: 1;
++       Leather Cap => Defence: 1;
++       Leather Coat => Defence: 3;
++       Leather Chaps => Defence: 1;
     Weapon:
--       Wooden Bow=>Attack: 2;
+-       Wooden Bow => Attack: 2;
+-		Withered Quiver => Attack 1;
     Stats:
 =       Health => 10;
 =       Resource => Stamina;

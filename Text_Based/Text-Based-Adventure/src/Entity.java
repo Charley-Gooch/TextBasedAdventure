@@ -5,12 +5,15 @@ public class Entity {
 	private int eResourceCount;
 	private int attack;
 	private int defence;
+	private int spell;
+	private int STR;
+	private int CON;
+	private int AGI;
+	private int INT;
+	private int CHA;
 
-	public Entity(String eName, int eHealth, String eResource, int eResourceCount) {
-		this.eName = eName;	
-		this.eHealth = eHealth;
-		this.eResource = eResource;
-		this.eResourceCount = eResourceCount;
+	public Entity(String eName) {
+		this.eName = eName;
 	}
 	//ENTITY
 	//GETTERS
@@ -20,6 +23,9 @@ public class Entity {
 	
 	public int getDefence() {
 		return this.defence;
+	}
+	public int getSpell() {
+		return this.spell;
 	}
 	
 	public String getName() {
@@ -37,6 +43,21 @@ public class Entity {
 	public int getResourceCount() {
 		return this.eResourceCount;
 	}
+	public int getSTR() {
+		return STR;
+	}
+	public int getCON() {
+		return CON;
+	}
+	public int getAGI() {
+		return AGI;
+	}
+	public int getINT() {
+		return INT;
+	}
+	public int getCHA() {
+		return CHA;
+	}
 	//SETTERS
 	public void setResourceCount(int resource_count) {
 		this.eResourceCount = resource_count;
@@ -45,6 +66,9 @@ public class Entity {
 	public void setHealth(int health_count) {
 		this.eHealth = health_count;
 	}
+	public void setResource(String resource) {
+		this.eResource = resource;
+	}
 	
 	public void setAttack(int attack) {
 		this.attack = attack;
@@ -52,5 +76,28 @@ public class Entity {
 	
 	public void setDefence(int defence) {
 		this.defence = defence;
+	}
+	public void setSepll(int spell) {
+		this.spell = spell;
+	}
+	
+	public void setSTR(int sTR) {
+		STR = sTR;
+	}
+	
+	public void setCON(int cON) {
+		CON = cON;
+	}
+	
+	public void setAGI(int aGI) {
+		AGI = aGI;
+	}
+	
+	public void setINT(int iNT) {
+		INT = iNT;
+	}
+	
+	public void setCHA(int cHA) {
+		CHA = cHA;
 	}
 }

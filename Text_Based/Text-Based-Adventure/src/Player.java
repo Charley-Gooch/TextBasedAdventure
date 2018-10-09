@@ -6,9 +6,25 @@ public class Player extends Entity {
 	private String pChestpiece;
 	private String pLeggings;
 	
-	public Player(String pClass, String eName, int eHealth, String eResourse, int eResourseCount) {
-		super(eName, eHealth,eResourse, eResourseCount);
+	public Player(String pClass, String eName) {
+		super(eName);
 		this.pClass = pClass;
+	}
+	public void printAll() {
+		System.out.println(pClass);
+		System.out.println(pHelmet);
+		System.out.println(pChestpiece);
+		System.out.println(pLeggings);
+		System.out.println(pMainhand);
+		System.out.println(pOffhand);
+		System.out.println(getHealth());
+		System.out.println(getResource());
+		System.out.println(getResourceCount());
+		System.out.println(getSTR());
+		System.out.println(getCON());
+		System.out.println(getAGI());
+		System.out.println(getINT());
+		System.out.println(getCHA());
 	}
 	//GETTERS
 	public String getPClass() {

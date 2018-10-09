@@ -1,11 +1,12 @@
 The Brute class starts with the following:
 Equipment:
     Arnour:
-+       Rusty Chain helm => defence: 2;
-+       Rusty Chainmail => defence: 4;
-+       Leather Chaps => defence: 1;
++       Rusty Chainhelm => Defence: 2;
++       Rusty Chainmail => Defence: 4;
++       Leather Chaps => Defence: 1;
     Weapon:
--       Shoddy Greatsword=>Attack: 3;
+-       Shoddy Greatsword => Attack: 4;
+-		No Offhand;
     Stats:
 =       Health => 10;
 =       Resource => Stamina;
