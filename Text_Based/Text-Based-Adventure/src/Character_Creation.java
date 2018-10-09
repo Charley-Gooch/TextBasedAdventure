@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -49,8 +51,35 @@ public class Character_Creation {
 		}
 	}
 
-	public static void classData(Player player) throws IOException {
+	public static void classData(Player player) throws IOException, NullPointerException {
 		//TODO make this assign each part of the player their respective piece of equipment
-		Text_Printer.text_print("class_"+player.getPClass()+".txt");
+		FileReader r = null;
+		BufferedReader reader = null;
+		try {
+			r = new FileReader("C://Users//charley.gooch//git//repository//Text_Based//Text-Based-Adventure//resources//class_" + player.getPClass() + ".txt");
+			reader = new BufferedReader(r);
+			String line = "";
+			while (line != null) {
+				line = reader.readLine().toString();
+				if(line.substring(0,1).equals("+")) {
+					System.out.println(line);
+				}
+				else if(line.substring(0,1).equals("-")) {
+					System.out.println(line);
+				}
+				else if(line.substring(0,1).equals("=")) {
+					System.out.println(line);
+				}else if(line.substring(0,1).equals("#")) {
+					line = null;
+				}
+			}
+		}finally{
+			if(r != null) {
+				r.close();
+			}
+			if(reader != null) {
+				reader.close();
+			}
+		}
 	}
 }

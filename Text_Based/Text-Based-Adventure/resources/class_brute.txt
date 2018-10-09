@@ -1,4 +1,3 @@
-###############################################################################
 The Brute class starts with the following:
 Equipment:
     Arnour:
